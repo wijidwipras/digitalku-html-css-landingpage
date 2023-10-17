@@ -1,5 +1,6 @@
 body{
     font-family: "Poppins", Helvetica;
+    /* padding: 0px 2rem; */
 }
 header{
     display: flex;
@@ -36,12 +37,120 @@ header{
     font-weight: 700;
     color: white;
 }
+
+/* ====> hero section <===== */
 .hero-section{
     display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
 }
-/* .hero-desc{
-    flex-shrink: calc(50%);
+.hero-section .hero-desc{
+    /* border: 1px solid blue; */
+    flex-basis: 50%;
+    padding-left: 2rem;
 }
-.hero-img{
-    flex-shrink: calc(50%);
-} */
+.hero-section .hero-desc h1{
+    color: #354E68;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+}
+.hero-section .hero-desc p{
+    font-family: "Poppins", Helvetica;
+    color: #354E68;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 1.5rem 0px;
+    width: 80%;
+    line-height: .5cm;
+}
+.hero-section .hero-desc button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background: var(--grad-gren, linear-gradient(163deg, #ADE792 -73.34%, #4DBC99 79.63%));
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+}
+
+.hero-section .hero-img{
+    height: 80vh;
+    /* border: 1px solid rgb(4, 248, 4); */
+    flex-basis: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.hero-section .hero-img img{
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+/* ====> keunggulan section <===== */
+.keunggulan{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    margin: 0px 2rem;
+    margin-top: 100px;
+}
+
+.keunggulan .keunggulan-img{
+    flex-basis: 50%;
+    /* border: 1px solid blue; */
+
+}
+.keunggulan .keunggulan-img img{
+    width: 100%;
+}
+
+.keunggulan .keunggulan-desc{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+
+.keunggulan .keunggulan-desc h2{
+    color: #354E68;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+.keunggulan .keunggulan-desc .list-keunggulan{
+    display: flex;
+    margin-top: 2rem;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-icon{
+    /* display: flex;
+    margin-top: 1rem;
+    align-items: center; */
+    flex-basis: 10%;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-icon img{
+    width: 40px;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc{
+    flex-basis: 90%;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc h3{
+    color: #354E68;
+    /* font-family: Poppins; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc p{
+    color: #354E68;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 70%;
+}
