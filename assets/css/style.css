@@ -1,5 +1,6 @@
 body{
     font-family: "Poppins", Helvetica;
+    /* padding: 0px 2rem; */
 }
 header{
     display: flex;
@@ -12,6 +13,10 @@ header{
     display: flex;
     align-items: center;
     gap: 81px;
+}
+.link a{
+    text-decoration: none;
+    color: #354E68;
 }
 .text-wrapper{
     font-family: "Poppins", Helvetica;
@@ -36,12 +41,301 @@ header{
     font-weight: 700;
     color: white;
 }
+
+/* ====> hero section <===== */
 .hero-section{
     display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
 }
-/* .hero-desc{
-    flex-shrink: calc(50%);
+.hero-section .hero-desc{
+    /* border: 1px solid blue; */
+    flex-basis: 50%;
+    padding-left: 2rem;
 }
-.hero-img{
-    flex-shrink: calc(50%);
-} */
+.hero-section .hero-desc h1{
+    color: #354E68;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+}
+.hero-section .hero-desc p{
+    font-family: "Poppins", Helvetica;
+    color: #354E68;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 1.5rem 0px;
+    width: 80%;
+    line-height: .5cm;
+}
+.hero-section .hero-desc button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background: var(--grad-gren, linear-gradient(163deg, #ADE792 -73.34%, #4DBC99 79.63%));
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.10);
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+}
+
+.hero-section .hero-img{
+    height: 80vh;
+    /* border: 1px solid rgb(4, 248, 4); */
+    flex-basis: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.hero-section .hero-img img{
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+/* ====> keunggulan section <===== */
+.keunggulan{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    margin: 0px 2rem;
+    margin-top: 100px;
+}
+
+.keunggulan .keunggulan-img{
+    flex-basis: 50%;
+    /* border: 1px solid blue; */
+
+}
+.keunggulan .keunggulan-img img{
+    width: 100%;
+}
+
+.keunggulan .keunggulan-desc{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+
+.keunggulan .keunggulan-desc h2{
+    color: #354E68;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+.keunggulan .keunggulan-desc .list-keunggulan{
+    display: flex;
+    margin-top: 2rem;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-icon{
+    /* display: flex;
+    margin-top: 1rem;
+    align-items: center; */
+    flex-basis: 10%;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-icon img{
+    width: 40px;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc{
+    flex-basis: 90%;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc h3{
+    color: #354E68;
+    /* font-family: Poppins; */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+}
+.keunggulan .keunggulan-desc .list-keunggulan .list-desc p{
+    color: #354E68;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 70%;
+}
+
+
+/* ====> keuntungan section <===== */
+
+.keuntungan{
+    margin: 0px 2rem;
+    margin-top: 100px;
+}
+
+.keuntungan h2{
+    color: #354E68;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.keuntungan p{
+    color: #354E68;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    width: 50%;
+    margin-top: 1rem;
+    /* border: 1px solid red; */
+}
+
+.keuntungan .list-keuntungan{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.keuntungan .list-keuntungan .card-keuntungan{
+    padding: 4rem;
+    border: 1px solid rgba(116, 94, 94, 0.13);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    border-radius: 38px;
+    background: #FFF;
+    box-shadow: 9px 4px 60px 0px rgba(0, 0, 0, 0.15);
+}
+
+.keuntungan .list-keuntungan .card-keuntungan img{
+    height: 80px;
+    width: auto;
+    margin-top: 1.5rem;
+}
+.keuntungan .list-keuntungan .card-keuntungan h3{
+    color: #354E68;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.keuntungan .list-keuntungan .card-keuntungan p{
+    color: #354E68;
+    font-size: 20px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+}
+.keuntungan .list-keuntungan .extend{
+    background: #6FCCAF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keuntungan .list-keuntungan .extend h3{
+    color: white;
+}
+
+/* ====> testimoni section <===== */
+
+.testimoni{
+    margin: 0px 2rem;
+    margin-top: 100px;
+}
+.testimoni .testimoni-header{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.testimoni .testimoni-header h1{
+    color: #354E68;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.testimoni .testimoni-header p{
+    color: #354E68;
+    font-size: 20px;
+    margin-top: .5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.testimoni .testimon-body{
+    /* margin-top: 80px; */
+    /* border: 1px solid red; */
+    display: flex;
+    overflow-y: auto;
+    padding: 3rem 0px;
+}
+.testimoni .testimon-body .card-testimoni{
+    /* border: 1px solid red; */
+    flex-shrink: 0;
+    margin-left: .5em;
+    width: 300px;
+    padding: 1em;
+    border-radius: 25px;
+    border: 1px solid #6FCCAF;
+    background: #FFF;
+    box-shadow: 9px 4px 60px 0px rgba(0, 0, 0, 0.15);
+}
+.testimoni .testimon-body .card-testimoni .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+}
+.testimoni .testimon-body .card-testimoni .card-body h3{
+    margin-bottom:1em;
+    color: #354E68;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+.testimoni .testimon-body .card-testimoni .card-body p{
+    margin-bottom: .5em;
+    color: #354E68;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+.testimoni .testimon-body .card-testimoni .card-img{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.testimoni .testimon-body .card-testimoni .card-img img{
+    width: 100%;
+}
+
+/* ====> footer section <===== */
+
+footer{
+    margin-top: 100px;
+    padding: 90px 2rem;
+    background: linear-gradient(163deg, #6FCCAF -73.34%, #4DBC99 79.63%);
+    display: flex;
+}
+
+footer .brand{
+    flex-basis: 40%;
+    /* border: 1px solid red; */
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+footer .brand p{
+    margin: 1em 0em;
+    width: 80%;
+}
+footer .section{
+    flex-basis: 20%;
+    /* border: 1px solid red; */
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+footer .section ul li{
+    margin: 1em 0em;
+}
+
